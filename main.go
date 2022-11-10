@@ -53,7 +53,7 @@ func main() {
 					msg.ReplyToMessageID = update.Message.MessageID
 					bot.Send(msg)
 					bot.Send(tgbotapi.NewMessage(update.Message.Chat.ID, "Video downloading ended!"))
-					bot.Send(tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath(filepath)))
+					//bot.Send(tgbotapi.NewPhoto(update.Message.Chat.ID, tgbotapi.FilePath(filepath)))
 					
 				}
 			}()
